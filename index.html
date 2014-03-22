@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->   
+<head>  
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"> 
+    <title>一周事务管理</title>
+    <meta name="description" content="Backbone,demo">
+    <meta name="keywords" content="Backbone,demo">
+    <link rel="stylesheet" href="css/index.css">
+</head>  
+<body>  
+
+<div id="container">
+    <div id="top">
+        <h3>一周事务管理</h3>
+        <input id="name" name="name"  placeholder="输入需要记录的事件" >
+        <select name="day">
+            <option value="one">星期一</option>
+            <option value="two">星期二</option>}
+            <option value="three">星期三</option>}
+            <option value="four">星期四</option>}
+            <option value="five">星期五</option>}
+            <option value="six">星期六</option>}
+            <option value="seventh">星期七</option>}
+        </select>
+        <button id="add">add</button> 
+    </div> 
+    <section id="one">
+        <h3>星期一</h3>
+    </section>
+    <section id="two">
+        <h3>星期二</h3>
+    </section>
+    <section id="three">
+        <h3>星期三</h3>
+    </section>
+    <section id="four">
+        <h3>星期四</h3>
+    </section>
+    <section id="five">
+        <h3>星期五</h3>
+    </section>
+    <section id="six">
+        <h3>星期六</h3>
+    </section>
+    <section id="seventh">
+        <h3>星期七</h3>
+    </section>
+</div>
+<script type="text/template" id="content-template">    
+    <table>
+        <tbody>
+        <tr>
+            <td id="finishpic"><img src="images/finish.png"</td>
+            <td id="content"><p><%= name %></p></td>
+            <td><div id="finish">完成</div></td>
+            <td><div id="cancel">取消</div></td>
+            <td><div id="delete"></div></td> 
+        </tr>
+        </tbody>
+    </table>
+    <input id="edit" value="">
+</script>  
+</body>  
+<script src="js/jquery.js"></script>  
+<script src="js/underscore.js"></script>  
+<script src="js/backbone.js"></script>
+<script src="js/backbone-localstorage.js"></script>
+<script src="js/index.js"></script>  
+</html>  

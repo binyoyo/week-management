@@ -1,0 +1,120 @@
+body{
+    background-color: #f2f2f2;
+    margin:10px auto;
+    font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+li{
+    list-style:none;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size:16px;
+}
+input#name{
+    width:60%;
+}
+#container {
+    width:60%;
+    min-height:600px;
+    padding-bottom:30px;
+    margin:0 auto;
+    background-color:#fff;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+#container section{
+    margin: 20px;
+    width:90%;
+}
+#container section h3{
+    margin: 5px 20px;
+}
+#top{
+    padding: 40px;
+}
+table{
+    border-bottom: 1px solid #cccccc;
+    width:90%;
+    margin-left: 20px;
+}
+#finishpic{
+    width:20px;
+    display:none;
+}
+
+#content{
+    width:80%;
+    max-width:510px;
+    word-break : break-all;
+}
+#finish,#cancel{
+    width:35px;
+    display:none;
+    color:#aaa;
+    padding-right:10px;
+}
+#content:hover,#finish:hover,#cancel:hover{
+    color:#000;
+    font-weight:bold;
+}
+#cancel{
+    display:none;
+}
+#delete{
+    width:25px;
+    height:20px;
+    display:none;
+    background: url(../images/destroy.png) no-repeat;
+}
+#delete:hover{
+    background-position: 0 -20px;
+}
+table:hover #finish,table:hover #delete{
+    display:block;
+}
+.done #finishpic{
+    display:table-cell;
+}
+.done #content{
+    color:#aaa;
+}
+.done:hover #cancel{
+    display:block;
+}
+.done:hover #finish{
+    display:none;
+}
+
+#edit{
+    display:none;
+    margin: 20px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+}
+@media screen and (max-width:1920px){
+    #container{
+       width:40%;        
+    }
+}
+@media screen and (max-width:1400px){
+    #container{
+       width:60%;        
+    }
+}
+@media screen and (max-width:1024px){
+    #container{
+       width:80%;        
+    }
+}
+@media screen and (max-width:768px){
+    #container{
+       width:96%;
+       mix-width:330px;        
+    }
+
+}
+
+
