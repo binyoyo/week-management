@@ -9,6 +9,8 @@ li{
 input{
     height: 30px;
     border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
     outline: none;
     font-size:16px;
 }
@@ -22,6 +24,8 @@ input#name{
     margin:0 auto;
     background-color:#fff;
     box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2);
 }
 #container section{
     margin: 20px;
@@ -92,6 +96,8 @@ table:hover #finish,table:hover #delete{
     width: 80%;
     height: 30px;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     outline: none;
 }
 @media screen and (max-width:1920px){
@@ -116,5 +122,3 @@ table:hover #finish,table:hover #delete{
     }
 
 }
-
-
